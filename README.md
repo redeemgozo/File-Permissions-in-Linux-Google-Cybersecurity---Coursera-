@@ -2,7 +2,9 @@
 This portfolio shows how to check and manage file permissions in Linux.   
 
 ## Project Description 
-In this activity, I worked as a security professional responsible for managing file permissions for a research team. Using Linux commands, I checked existing permissions, identified unauthorized access, and modified permissions to improve security. I used commands such as `ls -la` to examine permissions and `chmod` to update authorization settings for files, hidden files, and directories.
+In this activity, I worked as a security professional responsible for managing file permissions for a research team. Using Linux commands, I checked existing permissions, identified unauthorized access, and modified permissions to improve security. I used commands such as `ls -la` to examine permissions and `chmod` to update authorization settings for files, hidden files, and directories. 
+
+The directory used in these scenarios is/home/researcher2/projects/drafts, in which both the projects and the drafts have both subdirectories. 
 
 ## Check File and Directory Details 
 The 'ls -la' command was used to check the hidden files and their permission settings. 
@@ -30,5 +32,21 @@ In this part, I must determine whether any files have incorrect permissions and 
 ![Change File Permissions](screenshots/Change file permissions.png)  
 
 ## Change File Permissions on a hidden file 
+In this part, I must determine if a hidden file has incorrect permissions and then change the permissions as needed. This action will further remove unauthorized access and strengthen security on the system.
+
+- The file .project_x.txt is a hidden file that has been archived and should not be written to by anyone. (The user and group should still be able to read this file.)
+- I need to check the permissions of the hidden file .project_x.txt
+- Needs to change the permissions of the file .project_x.txt so that both the user and the group can read, but not write to, the file. (when naming a hidden file, start it with ".")
+
+
+![Change File Permissions on a hidden file](screenshots/Change file permissions on a hidden file.png) 
+
 ## Change Directory Permissions 
+I must change the permissions of a directory. First, I'll check the group permissions of the /home/researcher2/projects/drafts directory and then modify the permissions as required. 
+
+- Only the researcher2 user should be allowed to access the drafts directory and its contents.
+
+![Change File Permissions on a hidden file](screenshots/Change Directory Permissions.png) 
+
 ## Summary 
+Overall, I learned how to access and change permissions on Linux using different commands (`chmod`), (`ls -la`), which is a vital process especially as a security analyst, because they help manage and protect access to files and directories in Linux systems. The `ls -la` command allows analysts to view file permissions, ownership, and hidden files, which helps identify unauthorized access or insecure settings. The `chmod` command is used to modify permissions and remove unnecessary access from users, groups, or others. These commands are essential for enforcing the principle of least privilege, protecting sensitive data, and maintaining secure systems.
