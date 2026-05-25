@@ -7,7 +7,7 @@ In this activity, I worked as a security professional responsible for managing f
 The directory used in these scenarios is/home/researcher2/projects/drafts, in which both the projects and the drafts have both subdirectories. 
 
 ## Check File and Directory Details 
-The 'ls -la' command was used to check the hidden files and their permission settings. 
+The `ls -la` command was used to check the hidden files and their permission settings. 
 
 ![File & Directory Details](screenshots/Checkfileanddirectorydetails1.png)    
 ![File & Directory Details](screenshots/Checkfileanddirectorydetails2.png)
