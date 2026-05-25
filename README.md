@@ -9,8 +9,8 @@ The directory used in these scenarios is/home/researcher2/projects/drafts, in wh
 ## Check File and Directory Details 
 The 'ls -la' command was used to check the hidden files and their permission settings. 
 
-![File & Directory Details](screenshots/Check file and directory details 1.png)    
-![File & Directory Details](screenshots/Check file and directory details 2.png)
+![File & Directory Details](screenshots/Checkfileanddirectorydetails1.png)    
+![File & Directory Details](screenshots/Checkfileanddirectorydetails2.png)
 
 ## Describe the Permissions String 
 Here in the projects directory, it shows different permissions on different files and drafts. It has 10 character strings which shows permission in different ownerships (user, group, others) 
@@ -19,7 +19,7 @@ Here in the projects directory, it shows different permissions on different file
 - The 5th–7th characters indicate the read (`r`), write (`w`), and execute (`x`) permissions for the group. When one of these characters is a hyphen (`-`), it means that permission is not granted to the group.
 - The 8th–10th characters indicate the read (`r`), write (`w`), and execute (`x`) permissions for others. This category includes all other users on the system apart from the owner and group. When one of these characters is a hyphen (`-`), it means that permission is not granted to others.
   
-![File & Directory Details](screenshots/Check file and directory details 1.png)  
+![File & Directory Details](screenshots/Checkfileanddirectorydetails1.png)    
 ## Change File Permissions 
 In this part, I must determine whether any files have incorrect permissions and then change the permissions as needed. This action will remove unauthorized access and strengthen security on the system.
 
@@ -29,7 +29,7 @@ In this part, I must determine whether any files have incorrect permissions and 
 - In the scenario, the file project_m.txt is a restricted file and should not be readable or writable by the group or other; only the user should have these permissions on this file.
 - I then used the (`chmod`) command to change permissions of the project_m.txt file so that the group doesn’t have read or write permissions.
 
-![Change File Permissions](screenshots/Change file permissions.png)  
+![Change File Permissions](screenshots/Changefilepermissions.png)  
 
 ## Change File Permissions on a hidden file 
 In this part, I must determine if a hidden file has incorrect permissions and then change the permissions as needed. This action will further remove unauthorized access and strengthen security on the system.
@@ -39,14 +39,14 @@ In this part, I must determine if a hidden file has incorrect permissions and th
 - Needs to change the permissions of the file .project_x.txt so that both the user and the group can read, but not write to, the file. (when naming a hidden file, start it with ".")
 
 
-![Change File Permissions on a hidden file](screenshots/Change file permissions on a hidden file.png) 
+![Change File Permissions on a hidden file](screenshots/Changefilepermissionsonahiddenfile.png) 
 
 ## Change Directory Permissions 
 I must change the permissions of a directory. First, I'll check the group permissions of the /home/researcher2/projects/drafts directory and then modify the permissions as required. 
 
 - Only the researcher2 user should be allowed to access the drafts directory and its contents.
 
-![Change File Permissions on a hidden file](screenshots/Change Directory Permissions.png) 
+![Change File Permissions on a hidden file](screenshots/ChangeDirectoryPermissions.png) 
 
 ## Summary 
 Overall, I learned how to access and change permissions on Linux using different commands (`chmod`), (`ls -la`), which is a vital process especially as a security analyst, because they help manage and protect access to files and directories in Linux systems. The `ls -la` command allows analysts to view file permissions, ownership, and hidden files, which helps identify unauthorized access or insecure settings. The `chmod` command is used to modify permissions and remove unnecessary access from users, groups, or others. These commands are essential for enforcing the principle of least privilege, protecting sensitive data, and maintaining secure systems.
